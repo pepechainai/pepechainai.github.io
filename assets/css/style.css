@@ -540,7 +540,7 @@ h6 {
   line-height: 28px;
 }
 #header nav .menu-header li a:hover {
-  color: #00D38E;
+  color: #7DC243;
 }
 #header nav .menu-header li:first-child {
   margin-left: 0;
@@ -953,15 +953,12 @@ footer .social-area ul.social-list li:first-child {
   }
 }
 @media screen and (max-width: 991px) {
-  body {
-    background-color: #533E6D;
-  }
   #header {
     padding: 10px 0;
     position: unset;
   }
   #header .navbar-toggler {
-    color: #9C9AF4;
+    color: #fff;
     margin-right: 10px;
   }
   #header nav .menu-header {
@@ -1015,6 +1012,9 @@ footer .social-area ul.social-list li:first-child {
   .home-page .top-home-page .img {
     text-align: center;
   }
+  .network-support {
+    text-align: center;
+  }
   .home-page .air-drop p {
     margin-bottom: 10px;
   }
@@ -1044,9 +1044,6 @@ footer .social-area ul.social-list li:first-child {
   .home-page .tokenomic .transparency p span {
     word-break: break-all;
   }
-  .home-page .road-map {
-    padding-bottom: 280px;
-  }
   .home-page .air-drop .process-bar .progress .bg-success {
     background: url(../images/process-bar-bg-mobile.png) center center no-repeat;
   }
@@ -1061,10 +1058,6 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .about-pape h1.title {
     font-size: 40px;
-  }
-  .home-page .top-home-page .info {
-    -webkit-text-stroke: 1px #000;
-    text-stroke: 1px #000;
   }
   .home-page .top-home-page .info h1.title {
     font-size: 40px;
@@ -1165,7 +1158,7 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .road-map .road-map-info .direction-1 {
     background: transparent;
-    border: 1px solid #00D38E;
+    border: 1px solid #7DC243;
     margin-bottom: 20px;
     width: auto;
     height: auto;
@@ -1173,7 +1166,7 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .road-map .road-map-info .direction-2 {
     background: transparent;
-    border: 1px solid #00D38E;
+    border: 1px solid #7DC243;
     margin-bottom: 20px;
     width: auto;
     height: auto;
@@ -1181,7 +1174,7 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .road-map .road-map-info .direction-3 {
     background: transparent;
-    border: 1px solid #00D38E;
+    border: 1px solid #7DC243;
     margin-bottom: 20px;
     width: auto;
     height: auto;

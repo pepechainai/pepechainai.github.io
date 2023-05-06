@@ -12,15 +12,12 @@
 }
 
 @media screen and (max-width: 991px){
-  body {
-    background-color: #533E6D;
-  }
   
   #header {
     padding: 10px 0;
     position: unset;
     .navbar-toggler {
-      color: #9C9AF4;
+      color: #fff;
       margin-right: 10px;
     }
   }
@@ -81,6 +78,9 @@
       text-align: center;
     }
   }
+  .network-support {
+    text-align: center;
+  }
   .home-page .air-drop p {
     margin-bottom: 10px;
   }
@@ -110,9 +110,6 @@
       word-break: break-all;
     }
   }
-  .home-page .road-map {
-    padding-bottom: 280px;
-  }
   .home-page .air-drop .process-bar .progress .bg-success {
       background: url(../images/process-bar-bg-mobile.png) center center no-repeat;
   }
@@ -127,10 +124,6 @@
   }
   .home-page .about-pape h1.title {
     font-size: 40px;
-  }
-  .home-page .top-home-page .info {
-    -webkit-text-stroke: 1px #000;
-    text-stroke: 1px #000;
   }
   .home-page .top-home-page .info h1.title {
     font-size: 40px;
@@ -231,7 +224,7 @@
   }
   .home-page .road-map .road-map-info .direction-1 {
     background: transparent;
-    border: 1px solid #00D38E;
+    border: 1px solid #7DC243;
     margin-bottom: 20px;
     width: auto;
     height: auto;
@@ -239,7 +232,7 @@
   }
   .home-page .road-map .road-map-info .direction-2 {
     background: transparent;
-    border: 1px solid #00D38E;
+    border: 1px solid #7DC243;
     margin-bottom: 20px;
     width: auto;
     height: auto;
@@ -247,7 +240,7 @@
   }
   .home-page .road-map .road-map-info .direction-3 {
     background: transparent;
-    border: 1px solid #00D38E;
+    border: 1px solid #7DC243;
     margin-bottom: 20px;
     width: auto;
     height: auto;
