@@ -11,14 +11,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous"
               referrerpolicy="no-referrer" />
         <link href="../assets/css/style.css" rel="stylesheet">
-        <link rel="shortcut icon" href="/assets/images/.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/images/pepe-favicon.png" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/big-integer/1.6.48/BigInteger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="./js/contract/core.js"></script>
+        <script src="./assets/js/web3.min.js"></script>
 
-        <title>pape</title>
+        <title>Pape - An open-source meme on Arbitrum</title>
     </head>
-
+ 
     <body>
         <div class="wrapper">
             <div class="">
@@ -38,23 +40,43 @@
                                 </div>
                                 <div class="col-lg-10">
                                     <div class="collapse navbar-collapse" id="navbar-header">
-                                        <ul class="navbar-nav menu-header ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                                            <li>
-                                                <a class="nav-link" href="">home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="">earn</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="">zeroloss</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="https://opensea.io/collection/papapepenft/drop" target="_blank" class="nav-link" href="">nft holder</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="">community</a>
-                                            </li>
-                                        </ul>
+                                        <div class="row align-items-center flex-grow-1">
+                                            <div class="col-lg-9">
+                                                <ul class="navbar-nav menu-header ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                                                    <li>
+                                                        <a class="nav-link" href="">home</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="">Staking</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="">Bridge</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="" target="_blank" class="nav-link" href="">PepeAI</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="">Governance</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="user-action">
+                                                    <div class="d-lg-flex align-items-center justify-content-end user-wallet" >
+                                                        <div class="wrap-user-acct dropdown show">
+                                                          <a class="text-decoration-none fs-16 c-main b-600  d-flex align-items-center" href="#" role="button">
+                                                                <span class="b-600 user-acct">0x00</span>
+                                                          </a>                                            
+                                                        </div>
+                                                        <div class="wrap-user-btn show">
+                                                            <div class="wrap-btn-connect">
+                                                                <a href="#" class="btn-connect-wallet text-decoration-none fs-16 b-600 c-9 background-white border-transparent-2 py-8 px-24 border-radius-20 btn-transition d-inline-block"></a>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>                              
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -66,26 +88,53 @@
                 <div class="top-home-page">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-7" >
+                               <div class="info">
+                                    <h1 class="title">WoW!</h1>
+                                    <p>Discover a fresh, innovative way to make the most of your Pepe token</p>
+                                    <h1 class="title">pepechainAI</h1>
+                                    <p>Providing NFTs, Games, AI solution and DeFi services for users of Pepecoin</p>
+                               </div>
+                            </div>
+                            <div class="col-lg-5">
                                 <div class="img">
                                     <img src="./assets/images/img-home-page-1.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-8" >
-                               <div class="info">
-                                    <h1 class="title">$pape</h1>
-                                    <p>pepe's antics? water under the lily pad. his pop's arrived to shake things up!!</p>
+                            <div class="col-lg-12">
+                                <div class="network-support">
+                                    <p>Built by PepechainAI holders, for PepechainAI ....</p>
+                                   <div class="row">
+                                       <div class="col-lg-3">
+                                           <a href=""><img src="./assets/images/uniswap-network.png" alt=""></a>
+                                           <a href=""><img src="./assets/images/poloniex-network.png" alt=""></a>
+                                       </div>
+                                       <div class="col-lg-3">
+                                           <a href=""><img src="./assets/images/mexc-network.png" alt=""></a>
+                                           <a href=""><img src="./assets/images/okxdex-network.png" alt=""></a>
+                                           <a href=""><img src="./assets/images/coingecko-network.png" alt=""></a>
+                                       </div>
+                                       <div class="col-lg-3">
+                                           <a href=""><img src="./assets/images/gate-network.png" alt=""></a>
+                                           <a href=""><img src="./assets/images/trustwallet-network.png" alt=""></a>
+                                           <a href=""><img src="./assets/images/coinmarketcap-network.png" alt=""></a>
+                                       </div>
+                                       <div class="col-lg-3">
+                                           <a href=""><img src="./assets/images/huobi-network.png" alt=""></a>
+                                           <a href=""><img src="./assets/images/dextools-network.png" alt=""></a>
+                                       </div>
+                                   </div>
                                </div>
                                <div class="social-area">
                                     <ul class="social-list d-flex flex-row ">
                                         <li>
-                                            <a href="#"><img src="./assets/images/logo-twitter.png" alt=""></a>
+                                            <a href="https://twitter.com/pape_meme" target="_blank"><img src="./assets/images/logo-twitter.png" alt=""></a>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="./assets/images/logo-discord.png" alt=""></a>
+                                            <a href="https://discord.com/invite/CP6ChYJ6WV" target="_blank"><img src="./assets/images/logo-discord.png" alt=""></a>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="./assets/images/logo-telegram.png" alt=""></a>
+                                            <a href="https://t.me/pape_meme" target="_blank"><img src="./assets/images/logo-telegram.png" alt=""></a>
                                         </li>
                                     </ul>
                                </div>
@@ -93,35 +142,39 @@
                         </div>
                     </div>
                 </div>
+                <div class="boder-section">
+                    <img src="./assets/images/border-bg.png" alt="">
+                </div>
                 <div class="air-drop">
                     <div class="container">
                         <h1 class="title">airdrop</h1>
                         <!-- <div class="time-airdrop">
                             <p><i class="fa-solid fa-clock"></i><span>2023.04.15 09:00(UTC+0)-2023.05.15 09:00(UTC+0)</span></p>
                         </div> -->
-                        <p>"a true daddy always provides for his little ones, no matter what it takes"</p>
+                        <p>"a true daddy always provides for his little ones,<br> no matter what it takes"</p>
                         <div class="token-claimable">
-                            <p><span>11.236.586.000.000.000</span><br>claimable</p>
+                            <p><span>10.225.293.000.000.000</span><br>Get ready to claim 🎁👀<br> when it's 5:05am UTC on 5/5/2023 🔥🌍🕔</p>
                         </div>
                         <div class="process-bar">
                              <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 45%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                45%                              
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                0%                              
                                 </div>
-                                <p class="total-claimable">11.236.586.000.000.000</p>
+                                <p class="total-claimable">10.225.293.000.000.000</p>
                             </div>
                         </div>                       
                         <div class="btn-area">
-                             <button type="button" class="btn-home-page btn-connect" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                             <button type="button" class="btn-home-page btn-connect" data-bs-toggle="modal" data-bs-target="#ModalCheckAirdrop">
                               </button>
                             <button type="button" class="btn-home-page btn-invite"></button>
                         </div>
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+                        <div class="modal fade" id="ModalCheckAirdrop" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                               
                               <div class="modal-body">
-                                <p style="color:#000">"yo, don't trip dawg, just check again tomorrow...or to be sure, you better cop some papeNFTs, 'cause they're selling like hotcakes"</p>
+                                <p class="status-airdrop-failed" style="color:#000; display:none">sorry, poor ape! you ain't got the power to join the Pape army just yet. equip with the <a href="https://opensea.io/collection/papapepenft/drop" target="_blank" style="text-decoration: underline;color: #00D38E;">"papenft"</a> weapon to increase your power and become a part of our</p>
+                                <p class="status-airdrop-success" style="color:#000; display:none">yo, congrats monkey knight! we're stoked to have you onboard. come back tomorrow to find out exactly what reward we got in store for ya 🤑🔥</p>
                               </div>
                               
                             </div>
@@ -132,16 +185,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="boder-section">
+                    <img src="./assets/images/border-bg.png" alt="">
+                </div>
                 <div class="about-pape">
                     <div class="container">
-                        <h1 class="title">about pape</h1>
+                        <h1 class="title">about pepechainAI</h1>
                         <div class="img">
                             <img src="./assets/images/about-pape.png" alt="">
                         </div>
                         <div class="description">
-                            <p>ribbit ribbit, listen up folks! the green frog pepe has hopped in to overthrow the doggo regime. And now that pepe's still a tadpole, it's daddy's turn to rule the world. brace yourselves, a brand-new era is on the way, with infinite playgrounds for pepe and pape! our coin $PAPE was stealth launched with no presale, lp burnt, contract renounced and taxes collected will be distributed among the entire community. We take pride in being transparent, and $PAPE will always remain a memecoin for every hopper out there!"</p>
+                            <p>ribbit ribbit, listen up folks! the green frog pepe has hopped in to overthrow the doggo regime. And now that pepe's still a tadpole, it's daddy's turn to rule the world. brace yourselves, a brand-new era is on the way, with infinite playgrounds for pepe and pape! our coin $PAPE was stealth launched with no presale, contract renounced and taxes collected will be distributed among the entire community. We take pride in being transparent, and $PAPE will always remain a memecoin for every hopper out there!"</p>
                         </div>
                     </div>
+                </div>
+                <div class="boder-section">
+                    <img src="./assets/images/border-bg.png" alt="">
                 </div>
                 <div class="tokenomic">
                     <div class="container">
@@ -155,18 +214,17 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="info">
                                     <h4 class="title">Total Supply<br> 11,236,586,000,000,000</h4>
-                                    <p>91% of our supply is going straight to the community through airdrops. We're reserving 6% for future CEX listings and liquidity support. And 3% will be used to add to the liquidity pool, using all ETH gained from minting PapeNFTs</p>
+                                    <p>91% of our supply is going straight to the community through airdrops. We're reserving 6% for future CEX listings and liquidity support. And 3% will be used to add to the initial liquidity, using all ETH gained from minting PapeNFTs</p>
                                 </div>
                             </div>
                         </div>
                         <div class="transparency">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h4 class="title">Transparency</h4>
-                                    <p >$pape airdrop, the contract is open source and under audit:<br><span>0x000000000000000000000000<button id="copy-button" onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></span></p>
-                                    <p>Address for pape zeroloss for collecting and distributing rewards (3% of pape burning tax):<br><span>0x000000000000000000000000<button id="copy-button" onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></span></p>
-                                    <p>$pape airdrop, the contract is open source and under audit:<br><span>0x000000000000000000000000<button id="copy-button" onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></span></p>
-                                    <p>Address for pape zeroloss for collecting and distributing rewards (3% of pape burning tax):<br><span>0x000000000000000000000000<button id="copy-button" onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></span></p>
+                                    <h4 class="title">Transparency be like 😇:<br> We got nothin' to hide! 🙌🔎</h4>
+                                    <p >$pape airdrop, the contract is open source and under audit:<br><span>Claim time = contract address reveal 🕔🔓💰 Don't miss it, fam! 🚀😎</span></p>
+                                    <p>$pape treasury, the contract for tax fund is open source and under audit:<br><span>Claim time = contract address reveal 🕔🔓💰 Don't miss it, fam! 🚀😎</span></p>
+                                    <p>Address for pape zeroloss for collecting and distributing rewards (3% of pape burning tax):<br><span>Claim time = contract address reveal 🕔🔓💰 Don't miss it, fam! 🚀😎</span></p>
                                 </div>
                                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                                     <div class="img">
@@ -177,41 +235,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="boder-section">
+                    <img src="./assets/images/border-bg.png" alt="">
+                </div>
                 <div class="tax-and-zeroloss">
                     <div class="container">
+                        <h1 class="title">tax distribution</h1>
                         <div class="img">
                             <img src="./assets/images/chart-2.png" alt="">
                         </div>
-                        <h1 class="title">tax & zeroloss lottery</h1>
                         <div class="info">
                             <p >yo, peeps! we're taxing trades at 15%, but don't sweat it <br> - every last penny goes back to the community.<br>
                             1.5% gets burned up, 3% goes into the LP, 3% goes towards buying Pape and rewarding stakers. another 3% gets used to buy ARB and reward liquidity providers, while 3% also goes towards ARB and into the Zeroloss bonus pool. and we're keeping 1.5% aside for development funds. tt's that simple, folks!</p>
                             <span>tax level gradually decreasing to 0 as the ecosystem <br>gets HODLers like crazy! 🚀🌕🤑</span>
                         </div>                               
                         <div class="transparency" >
-                            <p>check it out<br> - Zeroloss Lottery, it's a dope, algorithm-based, open-source airdrop extravaganza. Every time you buy or sell pape, a 3% fee gets extracted and converted into ARB, then added to the prize pool. And that prize pool gets distributed through lucky draw tickets <br>- how sick is that?!</p>
+                            <h1 class="title">zeroloss lottery</h1>
+                            <p>check it out<br>it's a dope, algorithm-based, open-source airdrop extravaganza.<br> Every time you buy or sell pape, a 3% fee gets extracted and converted into ARB, then added to the prize pool. And that prize pool gets distributed through lucky draw tickets <br>- how sick is that?!</p>
                             <p>To get in on this action, here's what you need to know:</p>
-                            <div class="row" style = "margin-bottom:54px; margin-top: 72px;text-align:left;color:#00D38E ;">
-                                <div class="col-lg-4">
-                                    <div class="text-1">
-                                        <p>a. lucky draw tickets come in 10 levels, with transactions between $100 - $1000 qualifying for a ticket. </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="text-2">
-                                        <p>b. if your transaction is under $100, sorry fam, no ticket for you. But if it's over $1000, you'll score a ticket equivalent to $1000. </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="text-3">
-                                        <p>c. the higher your lucky draw ticket level, the better your chances of winning big. But remember, you only get one ticket per transaction.</p>
-                                    </div>
+                            <div class="" style = "">
+                                <div class="direction direction-2">
+                                    <p>trade like crazy or lock up your papeNFTs for a chance to win! 10 bucks = 1 ticket, and each NFT = 1 ticket too. Get up to 1000 tickets per round, then do it all over again next time. Good luck, gambler</p>
                                 </div>
                             </div>                      
-                            <p>so when does this all go down, you ask?<br>
-                            every 30 minutes, my friends. and once the draw is over, all the lucky draw tickets from that round become null and void. get ready to get lucky, y'all!</p>
+                            <p>get your lucky charms ready because Zeroloss Lottery's first round is coming in just 7 days after $pape listing! we'll be adding all the tax collected during this time to the prize pool, so the first reward is going to be BIG. don't miss out on your chance to win!</p>
                         </div>
                     </div>
+                </div>
+                <div class="boder-section">
+                    <img src="./assets/images/border-bg.png" alt="">
                 </div>
                 <div class="road-map">
                     <div class="container">
@@ -256,6 +308,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="boder-section">
+                    <img src="./assets/images/border-bg.png" alt="">
+                </div>
             </main>
             <div class="container" style="position: relative;">
                 <footer class="footer ">
@@ -264,19 +319,19 @@
                             <i class="fas fa-bars"></i>
                         </button> -->
                         <div class="logo cursor-pointer" onclick="window.location = 'index.html'">
-                            <img src="./assets/images/logo.png">
+                            <img src="./assets/images/logo-footer.png">
                         </div>
                     </div>
                     <div class="social-area">
                         <ul class="social-list d-flex flex-row ">
                             <li>
-                                <a href="#"><img src="./assets/images/logo-twitter.png" alt=""></a>
+                                <a href="https://twitter.com/pape_meme" target="_blank"><img src="./assets/images/logo-twitter.png" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="./assets/images/logo-discord.png" alt=""></a>
+                                <a href="https://discord.com/invite/CP6ChYJ6WV" target="_blank"><img src="./assets/images/logo-discord.png" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="./assets/images/logo-telegram.png" alt=""></a>
+                                <a href="https://t.me/pape_meme" target="_blank"><img src="./assets/images/logo-telegram.png" alt=""></a>
                             </li>
                         </ul>
                    </div>
@@ -330,7 +385,32 @@
 
     </body>
     <script>
-            
+        var coreHelper = new $.Core();
+        $(document).ready(function () {
+            coreHelper.init({});
+        });
+        let statusUser;
+        $('.air-drop .btn-connect').click(function () {
+            let userWallet = coreHelper.getUserAccount();
+            if (userWallet == '0x0000000000000000000000000000000000000000') {
+                $('.status-airdrop-failed').show();
+                $('.status-airdrop-success').hide();
+            }
+            else {
+                $.get("https://check-airdrop.papapepe.workers.dev/" + userWallet, function(data) {
+                    statusUser = data["status"];
+                    if (statusUser == 'failed') {
+                        $('.status-airdrop-failed').show();
+                        $('.status-airdrop-success').hide();
+                    }
+                    else {
+                        $('.status-airdrop-success').show();
+                        $('.status-airdrop-failed').hide();
+                    }
+                });
+            }
+        });
+
     </script>
 
 </html>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Slackey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 * {
   -webkit-box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -19,14 +19,8 @@ body {
   line-height: 24px;
   letter-spacing: -0.02em;
   font-weight: 300;
-  font-family: "Slackey", cursive;
-  background-color: #53386C;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  background: #533E6D;
+  font-family: "Lemon", cursive;
+  background-color: #4B9540;
 }
 
 img {
@@ -39,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: #9C9AF4;
+  color: #00D38E;
 }
 
 .container {
@@ -535,7 +529,6 @@ h6 {
   background: url(../images/menu-header-bg.png) center center no-repeat;
   width: 781px;
   height: 77px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   justify-content: center;
 }
 #header nav .menu-header li {
@@ -551,6 +544,26 @@ h6 {
 }
 #header nav .menu-header li:first-child {
   margin-left: 0;
+}
+#header nav .user-action .wrap-user-acct a {
+  background: url(../images/user-wallet-bg.png) center center no-repeat;
+  background-size: cover;
+  width: 248px;
+  height: 64px;
+  display: flex;
+  padding-left: 20px;
+  cursor: pointer;
+}
+#header nav .user-action .wrap-user-acct a span.user-acct {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+#header nav .user-action .wrap-user-btn .btn-connect-wallet {
+  background: url(../images/btn-connect-wallet.png) center center no-repeat;
+  background-size: cover;
+  width: 248px;
+  height: 64px;
 }
 
 footer {
@@ -586,30 +599,37 @@ footer .social-area ul.social-list li:first-child {
   margin-left: 0;
 }
 
+.home-page .boder-section img {
+  width: 100%;
+}
 .home-page .top-home-page {
   background: url(../images/top-home-page-bg.png) center center no-repeat;
-  background-size: auto;
-  padding: 223px 0 306px 0;
+  background-size: cover;
+  padding: 223px 0 106px 0;
 }
 .home-page .top-home-page .info {
   color: #fff;
-  -webkit-text-stroke: 2px #000;
-  text-stroke: 2px #000;
-  text-align: right;
 }
 .home-page .top-home-page .info h1.title {
   font-size: 96px;
   line-height: 137px;
-  -webkit-text-stroke: 0.5px #000;
-  text-stroke: 0.5px #000;
 }
 .home-page .top-home-page .info p {
   font-size: 36px;
   line-height: 49px;
 }
+.home-page .top-home-page .network-support p {
+  font-size: 24px;
+  line-height: 134.79%;
+  margin-bottom: 94px;
+}
+.home-page .top-home-page .network-support a img {
+  margin-bottom: 27.64px;
+}
 .home-page .top-home-page .social-area {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-top: 31px;
 }
 .home-page .top-home-page .social-area .social-list {
   list-style: none;
@@ -632,13 +652,12 @@ footer .social-area ul.social-list li:first-child {
   background: url(../images/home-bg-1.png) bottom center no-repeat;
   background-size: auto;
   text-align: center;
-  padding-bottom: 200px;
+  padding-top: 72px;
+  padding-bottom: 133px;
 }
 .home-page .air-drop h1.title {
   font-size: 64px;
   line-height: 91px;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
   margin-bottom: 60px;
 }
 .home-page .air-drop p {
@@ -655,7 +674,7 @@ footer .social-area ul.social-list li:first-child {
 .home-page .air-drop .token-claimable p {
   font-size: 24px;
   line-height: 134.79%;
-  color: #00D38E;
+  color: #fff;
   margin-bottom: 48px;
 }
 .home-page .air-drop .token-claimable p span {
@@ -668,7 +687,7 @@ footer .social-area ul.social-list li:first-child {
   padding: 6px;
   display: flex;
   align-items: center;
-  background: linear-gradient(#361C56, #361C56) padding-box, linear-gradient(90deg, #00D38E 0%, #B25FFF 100%) border-box;
+  background: #fff;
   border: 2px solid transparent;
   margin-bottom: 64px;
 }
@@ -677,6 +696,7 @@ footer .social-area ul.social-list li:first-child {
   border-radius: 63px;
   width: 100%;
   position: relative;
+  background: #DADADA;
 }
 .home-page .air-drop .process-bar .progress .bg-success {
   background: url(../images/process-bar-bg.png) center center no-repeat;
@@ -708,7 +728,7 @@ footer .social-area ul.social-list li:first-child {
   padding: 10px;
   border-radius: 10px;
   margin-right: 60px;
-  width: 312.51px;
+  width: 329px;
   height: 68.75px;
   border: 0;
 }
@@ -750,13 +770,12 @@ footer .social-area ul.social-list li:first-child {
   background: url(../images/home-bg-2.png) bottom center no-repeat;
   background-size: auto;
   text-align: center;
-  padding-bottom: 280px;
+  padding-top: 126px;
+  padding-bottom: 139px;
 }
 .home-page .about-pape h1.title {
   font-size: 64px;
   line-height: 91px;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
   margin-bottom: 80px;
 }
 .home-page .about-pape .img {
@@ -772,15 +791,14 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tokenomic {
   background: url(../images/home-bg-1.png) bottom center no-repeat;
   background-size: auto;
-  text-align: center;
-  padding-bottom: 41px;
+  padding-top: 88px;
+  padding-bottom: 132px;
 }
 .home-page .tokenomic h1.title {
   font-size: 64px;
   line-height: 91px;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
   margin-bottom: 67px;
+  text-align: center;
 }
 .home-page .tokenomic .info {
   text-align: left;
@@ -788,11 +806,8 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tokenomic .info h4.title {
   font-size: 36px;
   line-height: 51px;
-  color: #00D38E;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
+  color: #FC9230;
   margin-bottom: 28px;
-  text-align: center;
 }
 .home-page .tokenomic .info p {
   font-size: 24px;
@@ -804,18 +819,13 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tokenomic .img img {
   width: 100%;
 }
-.home-page .tokenomic .transparency {
-  text-align: center;
-}
 .home-page .tokenomic .transparency .img img {
   width: 100%;
 }
 .home-page .tokenomic .transparency h4.title {
   font-size: 36px;
   line-height: 51px;
-  color: #00D38E;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
+  color: #fff;
   margin-bottom: 20px;
 }
 .home-page .tokenomic .transparency p {
@@ -824,11 +834,11 @@ footer .social-area ul.social-list li:first-child {
   text-align: left;
   margin: 0 auto;
   margin-bottom: 28px;
-  color: #B2A6C0;
+  color: #7DC243;
 }
 .home-page .tokenomic .transparency p span {
   font-weight: bold;
-  color: #00D38E;
+  color: #fff;
 }
 .home-page .tokenomic .transparency p span button {
   background: transparent;
@@ -843,7 +853,8 @@ footer .social-area ul.social-list li:first-child {
   background: url(../images/home-bg-2.png) bottom center no-repeat;
   background-size: auto;
   text-align: center;
-  padding-bottom: 57px;
+  padding-top: 120px;
+  padding-bottom: 162px;
 }
 .home-page .tax-and-zeroloss .img {
   margin-bottom: 66.32px;
@@ -851,8 +862,6 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tax-and-zeroloss h1.title {
   font-size: 64px;
   line-height: 91px;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
   margin-bottom: 39px;
 }
 .home-page .tax-and-zeroloss p {
@@ -863,61 +872,31 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tax-and-zeroloss span {
   font-size: 32px;
   line-height: 134.79%;
-  color: #00D38E;
+  color: #FC9230;
 }
 .home-page .tax-and-zeroloss .transparency {
-  margin-top: 35px;
+  margin-top: 70px;
 }
 .home-page .tax-and-zeroloss .transparency p {
   margin-bottom: 0;
 }
-.home-page .tax-and-zeroloss .transparency .text-1 {
-  background: url(../images/bg-text-1.png) center center no-repeat;
-  background-size: cover;
-  width: 305.03px;
-  height: 276.58px;
-  padding: 25px;
-  margin: 0 auto;
-}
-.home-page .tax-and-zeroloss .transparency .text-1 p {
-  font-size: 20px;
-  line-height: 134.79%;
-}
-.home-page .tax-and-zeroloss .transparency .text-2 {
-  background: url(../images/bg-text-2.png) center center no-repeat;
-  background-size: cover;
-  width: 304.25px;
-  height: 294.17px;
-  padding: 25px;
-  margin: 0 auto;
-}
-.home-page .tax-and-zeroloss .transparency .text-2 p {
-  font-size: 20px;
-  line-height: 134.79%;
-}
-.home-page .tax-and-zeroloss .transparency .text-3 {
-  background: url(../images/bg-text-3.png) center center no-repeat;
-  background-size: cover;
-  width: 304.72px;
-  height: 285.55px;
-  padding: 25px;
-  margin: 0 auto;
-}
-.home-page .tax-and-zeroloss .transparency .text-3 p {
-  font-size: 20px;
-  line-height: 134.79%;
+.home-page .tax-and-zeroloss .transparency .direction-2 {
+  text-align: center;
+  margin-bottom: 54px;
+  color: #FC9230;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .home-page .road-map {
   background: url(../images/bg-home-bottom.png) bottom center no-repeat;
   background-size: auto;
   text-align: center;
-  padding-bottom: 200px;
+  padding-top: 87px;
+  padding-bottom: 110px;
 }
 .home-page .road-map h1.title {
   font-size: 64px;
   line-height: 91px;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;
   margin-bottom: 49px;
 }
 .home-page .road-map p {
@@ -931,10 +910,16 @@ footer .social-area ul.social-list li:first-child {
   margin-bottom: 22px;
 }
 .home-page .road-map .road-map-info .direction {
+  margin: auto;
   margin-top: 60px;
+  display: grid;
 }
 .home-page .road-map .road-map-info .direction p {
   margin-bottom: 0;
+}
+.home-page .road-map .road-map-info .direction {
+  padding: 40px;
+  padding-top: 50px;
 }
 .home-page .road-map .road-map-info .direction p::before {
   content: "•";
@@ -945,21 +930,18 @@ footer .social-area ul.social-list li:first-child {
   background-size: cover;
   width: 1109.15px;
   height: 308.23px;
-  padding: 40px;
 }
 .home-page .road-map .road-map-info .direction-2 {
   background: url(../images/bg-text-5.png) center center no-repeat;
   background-size: cover;
   width: 1109px;
   height: 394px;
-  padding: 40px;
 }
 .home-page .road-map .road-map-info .direction-3 {
   background: url(../images/bg-text-6.png) center center no-repeat;
   background-size: cover;
   width: 1120px;
   height: 297px;
-  padding: 40px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1096,7 +1078,7 @@ footer .social-area ul.social-list li:first-child {
     font-size: 14px;
   }
   .home-page .tokenomic .info h4.title {
-    font-size: 20px;
+    font-size: 17px;
   }
   .home-page .tokenomic .info p {
     font-size: 14px;
@@ -1207,6 +1189,12 @@ footer .social-area ul.social-list li:first-child {
   }
   .wrapper {
     width: 100%;
+  }
+  .home-page .tokenomic .transparency h4.title {
+    font-size: 17px;
+  }
+  .home-page .top-home-page .img img {
+    max-width: 120px;
   }
   footer {
     text-align: center;

@@ -25,11 +25,6 @@
 			background: url(../images/menu-header-bg.png) center center no-repeat;
 			width: 781px;
 			height: 77px;
-			text-shadow:
-		    -1px -1px 0 #000,
-		    1px -1px 0 #000,
-		    -1px 1px 0 #000,
-		    1px 1px 0 #000;
 		    justify-content: center;
 			li {
 				margin-left: 38px;
@@ -44,6 +39,32 @@
 			}
 			li:first-child {
 				margin-left: 0;
+			}
+		}
+		.user-action {
+			.wrap-user-acct {
+				a {
+					background: url(../images/user-wallet-bg.png) center center no-repeat;
+					background-size: cover;
+					width: 248px;
+					height: 64px;
+					display: flex;
+					padding-left: 20px;
+					cursor: pointer;
+					span.user-acct {
+						font-size: 20px;
+						line-height: 28px;
+						color: #fff;
+					}
+				}
+			}
+			.wrap-user-btn {
+				.btn-connect-wallet {
+					background: url(../images/btn-connect-wallet.png) center center no-repeat;
+					background-size: cover;
+					width: 248px;
+					height: 64px;
+				}				
 			}
 		}
 	}
