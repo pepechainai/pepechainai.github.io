@@ -1,0 +1,40 @@
+footer {
+    padding: 67px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+		.menu-footer {
+			li {
+				margin-left: 60px;
+				a {
+					color: #000;
+				}
+				a:hover {
+					color: #9C9AF4;
+				}
+			}
+			li:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+	.social-area {
+		ul.social-list {
+			list-style: none;
+			margin-bottom: 0;
+			li {
+				margin-left: 40px;
+				a {
+					img {
+						width: 42px;
+						height: 42px;
+					}
+				}
+			}
+			li:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
