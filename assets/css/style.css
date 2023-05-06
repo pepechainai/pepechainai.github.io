@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "kyiv-type-serif";
+  src: url("../fonts/kyiv-type-serif.woff") format("woff");
+}
 html {
   margin: 0;
   padding: 0;
@@ -612,11 +616,17 @@ footer .social-area ul.social-list li:first-child {
 }
 .home-page .top-home-page .info h1.title {
   font-size: 96px;
-  line-height: 137px;
+  line-height: 125px;
+  color: #FD9F07;
+  -webkit-text-stroke: 0.5px #000;
+  text-stroke: 0.5px #000;
 }
 .home-page .top-home-page .info p {
   font-size: 36px;
   line-height: 49px;
+}
+.home-page .top-home-page .network-support {
+  margin-top: 18px;
 }
 .home-page .top-home-page .network-support p {
   font-size: 24px;
@@ -665,17 +675,23 @@ footer .social-area ul.social-list li:first-child {
   line-height: 134.79%;
   width: 65%;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 52px;
 }
 .home-page .air-drop .token-claimable {
   margin-top: 30px;
   text-align: center;
 }
+.home-page .air-drop .token-claimable span {
+  font-size: 64px;
+}
 .home-page .air-drop .token-claimable p {
   font-size: 24px;
   line-height: 134.79%;
   color: #fff;
-  margin-bottom: 48px;
+  margin-bottom: 42px;
+  margin-top: 27px;
+  text-decoration-line: underline;
+  color: #7DC243;
 }
 .home-page .air-drop .token-claimable p span {
   font-size: 64px;
@@ -743,32 +759,7 @@ footer .social-area ul.social-list li:first-child {
   background: url(../images/button-invite.png) center center no-repeat;
   background-size: cover;
 }
-.home-page .air-drop .air-drop-for p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-page .air-drop .air-drop-for p.arb-holder {
-  background: url(../images/bg-1.png) center center no-repeat;
-  background-size: cover;
-  width: 220.65px;
-  height: 67.71px;
-}
-.home-page .air-drop .air-drop-for p.pepe-holder {
-  background: url(../images/bg-2.png) center center no-repeat;
-  background-size: cover;
-  width: 249.67px;
-  height: 68.31px;
-}
-.home-page .air-drop .air-drop-for p.papenft-holder {
-  background: url(../images/bg-3.png) center center no-repeat;
-  background-size: cover;
-  width: 275.06px;
-  height: 68.92px;
-}
 .home-page .about-pape {
-  background: url(../images/home-bg-2.png) bottom center no-repeat;
-  background-size: auto;
   text-align: center;
   padding-top: 126px;
   padding-bottom: 139px;
@@ -789,8 +780,6 @@ footer .social-area ul.social-list li:first-child {
   line-height: 180%;
 }
 .home-page .tokenomic {
-  background: url(../images/home-bg-1.png) bottom center no-repeat;
-  background-size: auto;
   padding-top: 88px;
   padding-bottom: 132px;
 }
@@ -832,7 +821,7 @@ footer .social-area ul.social-list li:first-child {
   text-align: left;
   margin: 0 auto;
   margin-bottom: 28px;
-  color: #7DC243;
+  color: #264A20;
 }
 .home-page .tokenomic .transparency p span {
   font-weight: bold;
@@ -854,9 +843,6 @@ footer .social-area ul.social-list li:first-child {
   padding-top: 120px;
   padding-bottom: 162px;
 }
-.home-page .tax-and-zeroloss .img {
-  margin-bottom: 66.32px;
-}
 .home-page .tax-and-zeroloss h1.title {
   font-size: 64px;
   line-height: 91px;
@@ -865,29 +851,175 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tax-and-zeroloss p {
   font-size: 24px;
   line-height: 180%;
-  margin-bottom: 54px;
+  margin-bottom: 94.6px;
 }
 .home-page .tax-and-zeroloss span {
   font-size: 32px;
   line-height: 134.79%;
   color: #FC9230;
 }
-.home-page .tax-and-zeroloss .transparency {
-  margin-top: 70px;
+.home-page .tax-and-zeroloss .reason-trust-in-pepe {
+  text-align: left;
 }
-.home-page .tax-and-zeroloss .transparency p {
+.home-page .tax-and-zeroloss .reason-trust-in-pepe p {
+  font-family: "kyiv-type-serif";
+  font-size: 24px;
+  line-height: 134.79%;
   margin-bottom: 0;
 }
-.home-page .tax-and-zeroloss .transparency .direction-2 {
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 {
+  background: #FD9F07;
+  border: 5px solid #FFFFFF;
+  border-radius: 0px 40px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .img {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .img img {
+  width: 108px;
+  height: 128px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .description {
+  padding: 16px;
+  flex: 1;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .description p {
+  font-family: "Lemon", cursive;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .description p.text-1 {
+  background: #FFFFFF;
+  border-radius: 45px;
+  font-size: 24px;
+  line-height: 134.79%;
+  color: #E44E2E;
+  margin-bottom: 22px;
+  padding: 6px 20px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .description p.text-2 {
+  background: #FFFFFF;
+  border-radius: 45px;
+  color: #366DFF;
+  font-size: 24px;
+  line-height: 134.79%;
+  margin-bottom: 0;
+  width: fit-content;
+  padding: 20px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 {
+  background: #01A3D9;
+  border: 5px solid #FFFFFF;
+  border-radius: 0px 40px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .img {
+  flex: 1;
+  margin-left: 45px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .img img {
+  width: 108px;
+  height: 128px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description {
+  padding: 16px;
+  flex: 0 0 auto;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description p {
+  font-family: "Lemon", cursive;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description p.text-1 {
+  background: #FFFFFF;
+  border-radius: 45px;
+  font-size: 24px;
+  line-height: 134.79%;
+  color: #E44E2E;
+  margin-bottom: 22px;
+  padding: 6px 20px;
+}
+.home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description p.text-2 {
+  background: #FFFFFF;
+  border-radius: 45px;
+  color: #366DFF;
+  font-size: 24px;
+  line-height: 134.79%;
+  margin-bottom: 0;
+  width: fit-content;
+  padding: 20px;
+  float: right;
+}
+.home-page .how-to-get-in {
+  padding-top: 228px;
+  padding-bottom: 176px;
+}
+.home-page .how-to-get-in .way-to-get-in {
+  background: #1D5614;
+  border: 5px solid #FFFFFF;
+  border-radius: 40px;
+  width: 58%;
+  margin: 0 auto;
+  position: relative;
+  padding: 79px 65px;
+  padding-top: 115px;
   text-align: center;
-  margin-bottom: 54px;
-  color: #FC9230;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+.home-page .how-to-get-in .way-to-get-in img.tips {
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  transform: translate(-50%, -50%);
+}
+.home-page .how-to-get-in .way-to-get-in p.tips {
+  transform: rotate(-25deg);
+  color: #FD9F07;
+  -webkit-text-stroke: 4px #000;
+  text-stroke: 4px #000;
+  font-size: 55.028px;
+  line-height: 72px;
+  position: absolute;
+  top: -36px;
+  left: -55px;
+}
+.home-page .how-to-get-in .way-to-get-in h1.title {
+  text-align: center;
+  font-size: 62px;
+  line-height: 84px;
+  margin-bottom: 64px;
+}
+.home-page .how-to-get-in .way-to-get-in .three-way {
+  font-family: "kyiv-type-serif";
+}
+.home-page .how-to-get-in .way-to-get-in .three-way .way {
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+}
+.home-page .how-to-get-in .way-to-get-in .three-way .way .img {
+  flex: 0 0 auto;
+  margin-right: 51px;
+}
+.home-page .how-to-get-in .way-to-get-in .three-way .way .img img {
+  width: 116px;
+  height: 116px;
+}
+.home-page .how-to-get-in .way-to-get-in .three-way .way .description {
+  text-align: left;
+}
+.home-page .how-to-get-in .way-to-get-in .three-way .way .description p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 134.79%;
+}
+.home-page .how-to-get-in .way-to-get-in .three-way .way .description span {
+  font-size: 20px;
+  line-height: 134.79%;
 }
 .home-page .road-map {
-  background: url(../images/bg-home-bottom.png) bottom center no-repeat;
-  background-size: auto;
   text-align: center;
   padding-top: 87px;
   padding-bottom: 110px;
