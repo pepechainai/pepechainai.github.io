@@ -815,9 +815,7 @@ footer .social-area ul.social-list li:first-child {
 }
 .home-page .tokenomic .img {
   margin-bottom: 48px;
-}
-.home-page .tokenomic .img img {
-  width: 100%;
+  text-align: center;
 }
 .home-page .tokenomic .transparency .img img {
   width: 100%;
