@@ -572,6 +572,33 @@ h6 {
 
 footer {
   padding: 67px 0;
+}
+footer .contact-us {
+  text-align: center;
+}
+footer .contact-us img {
+  margin-bottom: 28px;
+}
+footer .contact-us h1.title {
+  font-size: 64px;
+  line-height: 84px;
+  margin-bottom: 30px;
+}
+footer .contact-us p {
+  font-size: 24px;
+  line-height: 134.79%;
+  margin-bottom: 18px;
+}
+footer .contact-us button.btn-contact-us {
+  background: #00A4D9;
+  border-radius: 34px;
+  font-family: "kyiv-type-serif";
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: unset;
+  border: 0;
+}
+footer .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1020,7 +1047,6 @@ footer .social-area ul.social-list li:first-child {
   line-height: 134.79%;
 }
 .home-page .road-map {
-  text-align: center;
   padding-top: 87px;
   padding-bottom: 110px;
 }
@@ -1028,50 +1054,67 @@ footer .social-area ul.social-list li:first-child {
   font-size: 64px;
   line-height: 91px;
   margin-bottom: 49px;
+  text-align: center;
 }
 .home-page .road-map p {
   font-size: 24px;
   line-height: 134.79%;
 }
-.home-page .road-map .road-map-info .phase p {
-  margin-bottom: 0;
+.home-page .road-map .road-map-info .phases {
+  background: #1D5614;
+  border: 5px solid #FFFFFF;
+  border-radius: 0px 40px;
+  padding: 32px;
+  flex-grow: 1;
 }
-.home-page .road-map .road-map-info .phase img {
-  margin-bottom: 22px;
+.home-page .road-map .road-map-info .phases p {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 15px;
 }
-.home-page .road-map .road-map-info .direction {
-  margin: auto;
-  margin-top: 60px;
-  display: grid;
+.home-page .road-map .road-map-info p {
+  margin-top: 52px;
+  font-size: 24px;
+  line-height: 134.79%;
+  text-align: center;
+  margin-bottom: 36px;
 }
-.home-page .road-map .road-map-info .direction p {
-  margin-bottom: 0;
+.home-page .road-map .road-map-info .phase .phase-item {
+  background: #1D5614;
+  border: 5px solid #FFFFFF;
+  border-radius: 0px 40px;
+  padding: 30px 30px;
 }
-.home-page .road-map .road-map-info .direction {
-  padding: 40px;
-  padding-top: 50px;
+.home-page .road-map .road-map-info .phase .phase-item h4.title {
+  font-size: 36px;
+  line-height: 198.6%;
 }
-.home-page .road-map .road-map-info .direction p::before {
-  content: "•";
-  margin-right: 0.5em;
+.home-page .road-map .road-map-info .phase .phase-item ul {
+  padding-left: 16px;
 }
-.home-page .road-map .road-map-info .direction-1 {
-  background: url(../images/bg-text-4.png) center center no-repeat;
-  background-size: cover;
-  width: 1109.15px;
-  height: 308.23px;
+.home-page .road-map .road-map-info .phase .phase-item ul li {
+  font-family: "kyiv-type-serif";
+  font-size: 24px;
+  line-height: 134.79%;
 }
-.home-page .road-map .road-map-info .direction-2 {
-  background: url(../images/bg-text-5.png) center center no-repeat;
-  background-size: cover;
-  width: 1109px;
-  height: 394px;
+.home-page .about-pepechain-and-pepe-coin {
+  padding-top: 166px;
+  padding-bottom: 100px;
 }
-.home-page .road-map .road-map-info .direction-3 {
-  background: url(../images/bg-text-6.png) center center no-repeat;
-  background-size: cover;
-  width: 1120px;
-  height: 297px;
+.home-page .about-pepechain-and-pepe-coin .pepe-chain-ai, .home-page .about-pepechain-and-pepe-coin .pepe-coin {
+  text-align: center;
+}
+.home-page .about-pepechain-and-pepe-coin .pepe-chain-ai h4.title, .home-page .about-pepechain-and-pepe-coin .pepe-coin h4.title {
+  font-size: 48px;
+  line-height: 63px;
+  margin-bottom: 69px;
+}
+.home-page .about-pepechain-and-pepe-coin .pepe-chain-ai img, .home-page .about-pepechain-and-pepe-coin .pepe-coin img {
+  margin-bottom: 64px;
+}
+.home-page .about-pepechain-and-pepe-coin .pepe-chain-ai p, .home-page .about-pepechain-and-pepe-coin .pepe-coin p {
+  font-size: 24px;
+  line-height: 134.79%;
 }
 
 @media screen and (min-width: 1200px) {
