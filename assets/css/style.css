@@ -842,7 +842,7 @@ footer .social-area ul.social-list li:first-child {
   color: #FC9230;
 }
 .home-page .tokenomic .transparency p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 134.79%;
   text-align: left;
   margin: 0 auto;
@@ -854,7 +854,6 @@ footer .social-area ul.social-list li:first-child {
   color: #fff;
 }
 .home-page .tokenomic .transparency p span a {
-  word-break: break-all;
   color: #fff;
 }
 .home-page .tokenomic .transparency p span a:hover {
