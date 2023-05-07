@@ -941,8 +941,8 @@ footer .social-area ul.social-list li:first-child {
   align-items: center;
 }
 .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .img {
-  flex: 1;
-  margin-left: 45px;
+  flex: 0 0 auto;
+  margin-left: 20px;
 }
 .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .img img {
   width: 108px;
@@ -950,7 +950,7 @@ footer .social-area ul.social-list li:first-child {
 }
 .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description {
   padding: 16px;
-  flex: 0 0 auto;
+  flex: 1;
 }
 .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description p {
   font-family: "Lemon", cursive;

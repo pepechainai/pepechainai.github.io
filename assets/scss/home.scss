@@ -319,8 +319,8 @@
     			display: flex;
 				align-items: center;
     			.img {
-    				flex: 1;
-    				margin-left: 45px;
+    				flex: 0 0 auto;
+    				margin-left: 20px;
     				img {
     					width: 108px;
     					height: 128px;
@@ -328,7 +328,7 @@
     			}
     			.description {
     				padding: 16px;
-				    flex: 0 0 auto;
+				    flex: 1;
 				    p {
 				    	font-family: 'Lemon', cursive;
 				    }
