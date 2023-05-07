@@ -174,8 +174,7 @@
                             <div class="modal-content">
                               
                               <div class="modal-body">
-                                <p class="status-airdrop-failed" style="color:#000; display:none">sorry, poor ape! you ain't got the power to join the Pape army just yet. equip with the <a href="https://opensea.io/collection/papapepenft/drop" target="_blank" style="text-decoration: underline;color: #00D38E;">"papenft"</a> weapon to increase your power and become a part of our</p>
-                                <p class="status-airdrop-success" style="color:#000; display:none">yo, congrats monkey knight! we're stoked to have you onboard. come back tomorrow to find out exactly what reward we got in store for ya 🤑🔥</p>
+                                <p class="status-airdrop-failed" style="color:#000;">"Join us early and you might just catch an airdrop! Don't be late to the meme crypto party, fams."</p>
                               </div>
                               
                             </div>
@@ -463,27 +462,6 @@
         var coreHelper = new $.Core();
         $(document).ready(function () {
             coreHelper.init({});
-        });
-        let statusUser;
-        $('.air-drop .btn-connect').click(function () {
-            let userWallet = coreHelper.getUserAccount();
-            if (userWallet == '0x0000000000000000000000000000000000000000') {
-                $('.status-airdrop-failed').show();
-                $('.status-airdrop-success').hide();
-            }
-            else {
-                $.get("https://check-airdrop.papapepe.workers.dev/" + userWallet, function(data) {
-                    statusUser = data["status"];
-                    if (statusUser == 'failed') {
-                        $('.status-airdrop-failed').show();
-                        $('.status-airdrop-success').hide();
-                    }
-                    else {
-                        $('.status-airdrop-success').show();
-                        $('.status-airdrop-failed').hide();
-                    }
-                });
-            }
         });
 
     </script>
