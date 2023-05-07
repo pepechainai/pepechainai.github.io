@@ -649,6 +649,8 @@ footer .social-area ul.social-list li:first-child {
 .home-page .top-home-page .info p {
   font-size: 36px;
   line-height: 49px;
+  font-family: "kyiv-type-serif";
+  font-weight: bold;
 }
 .home-page .top-home-page .network-support {
   margin-top: 18px;
