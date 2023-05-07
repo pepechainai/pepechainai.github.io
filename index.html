@@ -47,16 +47,16 @@
                                                         <a class="nav-link" href="">home</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="">Staking</a>
+                                                        <a class="nav-link" href="" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Learn all about the project and Pepe's wisdom. (Pepe says: 'Hop back soon, fren! 🐸🔜')">Knowledge Pad </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="">Bridge</a>
+                                                        <a class="nav-link" href="" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Connect different blockchains with ease, just like magic! (Pepe says: 'Hop back soon, fren! 🐸🔜')">Magic Bridge </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" target="_blank" class="nav-link" href="">PepeAI</a>
+                                                        <a class="nav-link" href="" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Embark on an adventure through our blockchain explorers. (Pepe says: 'Hop back soon, fren! 🐸🔜')">Chain Safari </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="">Governance</a>
+                                                        <a class="nav-link" href="" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Participate in governance and help shape the future of the project. (Pepe says: 'Hop back soon, fren! 🐸🔜')">Frog Council</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -495,6 +495,10 @@
         var coreHelper = new $.Core();
         $(document).ready(function () {
             coreHelper.init({});
+        });
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
         });
 
     </script>

@@ -536,12 +536,13 @@ h6 {
   justify-content: center;
 }
 #header nav .menu-header li {
-  margin-left: 38px;
+  margin-left: 33px;
 }
 #header nav .menu-header li a {
   color: #fff;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
 }
 #header nav .menu-header li a:hover {
   color: #7DC243;
