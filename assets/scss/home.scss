@@ -145,20 +145,10 @@
 			    padding: 10px;
 			    border-radius: 10px;
 		        margin-right: 60px;
-    			width: 329px;
-				height: 68.75px;
 				border: 0;
 			}
 			button.btn-home-page:last-of-type {
 				margin-right: 0;
-			}
-			.btn-connect {
-				background: url(../images/button-connect.png) center center no-repeat; 
-				background-size: cover;
-			}
-			.btn-invite {
-				background: url(../images/button-invite.png) center center no-repeat; 
-				background-size: cover;
 			}
 		}
 	}
@@ -211,16 +201,23 @@
 			text-align: center;
 		}
 		.transparency {
+			p.info {
+				color: #fff;
+				span {
+					color: #FC9230;
+				}
+			}
 			.img {
 				img {
 					width: 100%;
 				}
 			}
 			h4.title {
-				font-size: 36px;
+				font-size: 30px;
 				line-height: 51px;
 				color: #fff;
 				margin-bottom: 20px;
+				color: #FC9230;
 			}
 			p {
 				font-size: 24px;

@@ -773,20 +773,10 @@ footer .social-area ul.social-list li:first-child {
   padding: 10px;
   border-radius: 10px;
   margin-right: 60px;
-  width: 329px;
-  height: 68.75px;
   border: 0;
 }
 .home-page .air-drop .btn-area button.btn-home-page:last-of-type {
   margin-right: 0;
-}
-.home-page .air-drop .btn-area .btn-connect {
-  background: url(../images/button-connect.png) center center no-repeat;
-  background-size: cover;
-}
-.home-page .air-drop .btn-area .btn-invite {
-  background: url(../images/button-invite.png) center center no-repeat;
-  background-size: cover;
 }
 .home-page .about-pape {
   text-align: center;
@@ -835,14 +825,21 @@ footer .social-area ul.social-list li:first-child {
   margin-bottom: 48px;
   text-align: center;
 }
+.home-page .tokenomic .transparency p.info {
+  color: #fff;
+}
+.home-page .tokenomic .transparency p.info span {
+  color: #FC9230;
+}
 .home-page .tokenomic .transparency .img img {
   width: 100%;
 }
 .home-page .tokenomic .transparency h4.title {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 51px;
   color: #fff;
   margin-bottom: 20px;
+  color: #FC9230;
 }
 .home-page .tokenomic .transparency p {
   font-size: 24px;
@@ -1351,7 +1348,7 @@ footer .social-area ul.social-list li:first-child {
     margin-top: 10px;
   }
   .home-page .tokenomic .transparency h4.title {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 17px;
     text-align: center;
   }
@@ -1476,6 +1473,15 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .how-to-get-in .way-to-get-in .three-way .way .description {
     text-align: center;
+  }
+  .home-page .top-home-page .social-area {
+    justify-content: unset;
+  }
+  .home-page .top-home-page .social-area .social-list li {
+    margin-right: 50.32px;
+  }
+  footer .contact-us img {
+    display: none;
   }
   footer {
     padding: 20px 0;

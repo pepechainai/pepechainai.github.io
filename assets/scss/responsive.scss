@@ -237,7 +237,7 @@
     margin-top: 10px;
   }
   .home-page .tokenomic .transparency h4.title {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 17px;
     text-align: center;
   }
@@ -362,6 +362,15 @@
   }
   .home-page .how-to-get-in .way-to-get-in .three-way .way .description {
     text-align: center;
+  }
+  .home-page .top-home-page .social-area {
+    justify-content: unset;
+  }
+  .home-page .top-home-page .social-area .social-list li {
+    margin-right: 50.32px;
+  }
+  footer .contact-us img {
+    display: none;
   }
   footer {
     padding: 20px 0;
