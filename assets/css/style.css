@@ -663,6 +663,9 @@ footer .social-area ul.social-list li:first-child {
 .home-page .top-home-page .network-support a img {
   margin-bottom: 27.64px;
 }
+.home-page .top-home-page .network-support .mobile-view {
+  display: none;
+}
 .home-page .top-home-page .social-area {
   display: flex;
   justify-content: center;
@@ -851,6 +854,13 @@ footer .social-area ul.social-list li:first-child {
 .home-page .tokenomic .transparency p span {
   font-weight: bold;
   color: #fff;
+}
+.home-page .tokenomic .transparency p span a {
+  word-break: break-all;
+  color: #fff;
+}
+.home-page .tokenomic .transparency p span a:hover {
+  color: #7DC243;
 }
 .home-page .tokenomic .transparency p span button {
   background: transparent;
@@ -1176,7 +1186,7 @@ footer .social-area ul.social-list li:first-child {
     padding: 6px 10px;
   }
   .home-page .top-home-page {
-    padding: 10px 0 90px;
+    padding: 10px 0 20px;
   }
   .home-page .top-home-page .img {
     text-align: center;
@@ -1192,7 +1202,8 @@ footer .social-area ul.social-list li:first-child {
     margin-bottom: 10px;
   }
   .home-page .air-drop {
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .home-page .air-drop .token-claimable {
     margin-top: 10px;
@@ -1228,10 +1239,15 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .about-pape .description p {
     font-size: 14px;
+    margin-bottom: 0;
+  }
+  .home-page .about-pape .about-us {
+    margin-bottom: 40px;
   }
   .home-page .about-pape h1.title {
     font-size: 40px;
     line-height: 40px;
+    margin-bottom: 20px;
   }
   .home-page .top-home-page .info h1.title {
     font-size: 40px;
@@ -1244,12 +1260,21 @@ footer .social-area ul.social-list li:first-child {
   .home-page .air-drop p {
     font-size: 14px;
   }
+  .home-page .tokenomic .info {
+    margin-top: 20px;
+    text-align: center;
+  }
   .home-page .tokenomic .info h4.title {
     font-size: 17px;
     line-height: 17px;
+    margin-bottom: 10px;
   }
   .home-page .tokenomic .info p {
     font-size: 14px;
+  }
+  .home-page .tax-and-zeroloss {
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .home-page .tax-and-zeroloss h1.title {
     font-size: 40px;
@@ -1257,12 +1282,15 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .tax-and-zeroloss p {
     font-size: 14px;
+    margin-bottom: 20px;
   }
   .home-page .tax-and-zeroloss span {
     font-size: 14px;
   }
   .home-page .road-map h1.title {
     font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
   .home-page .road-map .road-map-info .phase p {
     font-size: 14px;
@@ -1295,13 +1323,21 @@ footer .social-area ul.social-list li:first-child {
     display: none;
   }
   .home-page .about-pape {
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .home-page .tokenomic {
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-  .tokenomic .row {
+  .home-page .tokenomic .row {
     margin-bottom: 20px !important;
+  }
+  .home-page .tokenomic .transparency p {
+    text-align: center;
+  }
+  .home-page .tokenomic .img {
+    margin-bottom: 0;
   }
   .home-page .tax-and-zeroloss .transparency .row {
     margin-bottom: 20px !important;
@@ -1316,28 +1352,39 @@ footer .social-area ul.social-list li:first-child {
   .home-page .tokenomic .transparency h4.title {
     font-size: 17px;
     line-height: 17px;
+    text-align: center;
   }
   .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 {
-    display: block;
-  }
-  .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 {
-    display: block;
+    margin-bottom: 20px;
   }
   .home-page .tax-and-zeroloss .reason-trust-in-pepe p {
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .description p.text-1 {
-    font-size: 14px;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 10px;
   }
   .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description p.text-1 {
-    font-size: 14px;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 10px;
   }
   .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-1 .description p.text-2 {
-    font-size: 14px;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 10px;
   }
   .home-page .tax-and-zeroloss .reason-trust-in-pepe .reason-2 .description p.text-2 {
-    font-size: 14px;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 10px;
+  }
+  .home-page .how-to-get-in {
+    padding-bottom: 20px;
+    padding-top: 90px;
   }
   .home-page .how-to-get-in .way-to-get-in {
     width: 100%;
@@ -1362,6 +1409,11 @@ footer .social-area ul.social-list li:first-child {
   .home-page .how-to-get-in .way-to-get-in h1.title {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .home-page .road-map {
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .home-page .road-map .road-map-info .phases {
     padding: 16px;
@@ -1370,8 +1422,20 @@ footer .social-area ul.social-list li:first-child {
     padding: 16px;
     margin-bottom: 15px;
   }
+  .home-page .about-pepechain-and-pepe-coin {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .home-page .about-pepechain-and-pepe-coin .pepe-chain-ai {
+    margin-bottom: 40px;
+  }
   .home-page .about-pepechain-and-pepe-coin .pepe-chain-ai h4.title, .home-page .about-pepechain-and-pepe-coin .pepe-coin h4.title {
     font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .home-page .about-pepechain-and-pepe-coin .pepe-chain-ai img, .home-page .about-pepechain-and-pepe-coin .pepe-coin img {
+    margin-bottom: 20px;
   }
   .home-page .about-pepechain-and-pepe-coin .pepe-chain-ai p, .home-page .about-pepechain-and-pepe-coin .pepe-coin p {
     font-size: 14px;
@@ -1379,27 +1443,49 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .road-map .road-map-info .phase .phase-item h4.title {
     font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .home-page .road-map .road-map-info .phase .phase-item ul {
+    list-style: none;
+    text-align: center;
   }
   .home-page .road-map .road-map-info .phase .phase-item ul li {
     font-size: 14px;
   }
   .home-page .road-map .road-map-info p {
     font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .home-page .top-home-page .img img {
+    max-width: 240px;
+  }
+  .home-page .top-home-page .network-support .pc-view {
+    display: none;
+  }
+  .home-page .top-home-page .network-support .mobile-view {
+    display: block;
+  }
+  .home-page .top-home-page .network-support a img {
     max-width: 120px;
   }
   .home-page .road-map .road-map-info img {
     display: none;
   }
+  .home-page .how-to-get-in .way-to-get-in .three-way .way .description {
+    text-align: center;
+  }
   footer {
+    padding: 20px 0;
     text-align: center;
   }
   footer .footer-item {
     width: 100%;
   }
   footer .contact-us h1.title {
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 30px;
   }
   footer .contact-us p {
     font-size: 14px;

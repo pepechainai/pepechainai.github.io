@@ -34,6 +34,9 @@
 					margin-bottom: 27.64px;
 				}
 			}
+			.mobile-view {
+				display: none;
+			}
 		}
 		.social-area {
 			display: flex;
@@ -229,6 +232,13 @@
 				span {
 					font-weight: bold;
 					color: #fff;
+					a {
+						word-break: break-all;
+						color: #fff;
+					}
+					a:hover {
+						color: #7DC243;
+					}
 					button {
 						background: transparent;
 						color: #00D38E;
