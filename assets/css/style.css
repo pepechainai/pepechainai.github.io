@@ -590,7 +590,7 @@ footer .contact-us p {
   line-height: 134.79%;
   margin-bottom: 18px;
 }
-footer .contact-us button.btn-contact-us {
+footer .contact-us .btn-contact-us {
   background: #00A4D9;
   border-radius: 34px;
   font-family: "kyiv-type-serif";
