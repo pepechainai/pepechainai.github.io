@@ -7,10 +7,24 @@
   }
 }
 
-@media screen and (max-width: 1440px){
-  
+@media screen and (max-width: 1630px){
+  #header nav .menu-header {
+    background: url(../images/menu-header-bg-small.png) center center no-repeat;
+  }
+  #header nav .menu-header li a {
+    font-size: 13px;
+  }
 }
-
+@media screen and (max-width: 1370px){
+  #header nav .menu-header {
+    background: url(../images/menu-header-bg-small.png) left center no-repeat;
+    justify-content: start;
+    padding: 10px;
+  }
+  #header .logo img {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 991px){
   
   #header {
