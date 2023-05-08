@@ -19,6 +19,8 @@
     .navbar-toggler {
       color: #fff;
       margin-right: 10px;
+      position: absolute;
+      right: 0;
     }
   }
   #header nav .menu-header {
@@ -352,7 +354,7 @@
     display: none;
   }
   .home-page .top-home-page .network-support .mobile-view {
-    display: block;
+    display: flex;
   }
   .home-page .top-home-page .network-support a img {
     max-width: 120px;
