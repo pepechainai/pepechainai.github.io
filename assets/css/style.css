@@ -1178,6 +1178,12 @@ footer .social-area ul.social-list li:first-child {
   .footer .navbar-expand-lg .navbar-nav.menu-footer .nav-item {
     margin: 24px 0 0 0;
   }
+  #header nav .menu-header li a {
+    font-size: 18px;
+  }
+  #header nav .menu-header li img {
+    display: none;
+  }
   .header {
     background: transparent;
   }
