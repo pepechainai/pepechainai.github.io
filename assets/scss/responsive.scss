@@ -385,11 +385,23 @@
   .home-page .how-to-get-in .way-to-get-in .three-way .way .description {
     text-align: center;
   }
-  .home-page .top-home-page .social-area {
-    justify-content: unset;
-  }
   .home-page .top-home-page .social-area .social-list li {
     margin-right: 50.32px;
+  }
+  .home-page .top-home-page .social-area .social-list li a img {
+    width: 21px;
+    height: 21px;
+  }
+  .home-page .top-home-page .partners {
+    margin-bottom: 40px;
+  }
+  .home-page .top-home-page .network-support {
+    margin-bottom: 20px;
+  }
+  .home-page .top-home-page .partners h1.title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
   footer .contact-us img {
     display: none;
