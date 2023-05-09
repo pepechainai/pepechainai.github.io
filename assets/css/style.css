@@ -647,6 +647,28 @@ footer .social-area ul.social-list li:first-child {
   -webkit-text-stroke: 0.5px #000;
   text-stroke: 0.5px #000;
 }
+.home-page .top-home-page .info h1.title span {
+  font-size: 24px;
+  -webkit-text-stroke: 0px #000;
+  text-stroke: 0px #000;
+  margin-right: 5px;
+  font-weight: 700;
+  font-family: "kyiv-type-serif";
+}
+.home-page .top-home-page .info h1.title span a {
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 36px;
+}
+.home-page .top-home-page .info h1.title span.safu a {
+  background: #B955E8;
+}
+.home-page .top-home-page .info h1.title span.audit a {
+  background: #44CAE8;
+}
+.home-page .top-home-page .info h1.title span.kyc a {
+  background: #65E844;
+}
 .home-page .top-home-page .info p {
   font-size: 36px;
   line-height: 49px;
@@ -1527,6 +1549,12 @@ footer .social-area ul.social-list li:first-child {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 20px;
+  }
+  .home-page .top-home-page .info h1.title span {
+    font-size: 14px;
+  }
+  .home-page .top-home-page .info h1.title span a {
+    padding: 5px 10px;
   }
   footer .contact-us img {
     display: none;
