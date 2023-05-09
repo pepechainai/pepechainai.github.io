@@ -706,6 +706,9 @@ footer .social-area ul.social-list li:first-child {
   width: 326px;
   height: 150.08px;
 }
+.home-page .top-home-page .partners a:last-child {
+  margin-right: 0;
+}
 .home-page .top-home-page .social-area {
   display: flex;
   justify-content: center;
