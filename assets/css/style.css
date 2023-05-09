@@ -699,6 +699,13 @@ footer .social-area ul.social-list li:first-child {
   line-height: 91px;
   margin-bottom: 46px;
 }
+.home-page .top-home-page .partners a {
+  margin-right: 60px;
+}
+.home-page .top-home-page .partners a img {
+  width: 326px;
+  height: 150.08px;
+}
 .home-page .top-home-page .social-area {
   display: flex;
   justify-content: center;
@@ -1555,6 +1562,12 @@ footer .social-area ul.social-list li:first-child {
   }
   .home-page .top-home-page .info h1.title span a {
     padding: 5px 10px;
+  }
+  .home-page .top-home-page .partners a {
+    margin-right: 0;
+  }
+  .home-page .top-home-page .partners a img {
+    margin-bottom: 20px;
   }
   footer .contact-us img {
     display: none;
